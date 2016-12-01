@@ -2,7 +2,7 @@
 Myvas.AspNetCore
 =====================
 
-AppVeyor: [![Build status](https://ci.appveyor.com/api/github/webhook?id=qysq0xxtfyacs7jj?svg=true)](
+AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/qysq0xxtfyacs7jj?svg=true)](https://ci.appveyor.com/project/FrankH/myvas-aspnetcore)
 
 What is this?
 ----------------
