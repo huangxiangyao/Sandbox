@@ -1,14 +1,14 @@
 version: 0.1.{build}
 skip_non_tags: true
-
 before_build:
-- cmd: dotnet.exe restorebuild:
+- cmd: dotnet.exe restore
+build:
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
   verbosity: minimal
-
 test:
-  assemblies:
-  - test\Myvas.AspNetCore.Tests\bin\Debug\netcoreapp1.1\Myvas.AspNetCore.dll
-
+  assemblies: test\Myvas.AspNetCore.Tests\bin\Debug\netcoreapp1.1\Myvas.AspNetCore.dll
 notifications:
 - provider: Email
   to:
