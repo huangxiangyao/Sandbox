@@ -1,2 +1,24 @@
-# Myvas.AspNetCore
+
+Myvas.AspNetCore
+=====================
+
+AppVeyor: [![Build status](https://ci.appveyor.com/api/github/webhook?id=qysq0xxtfyacs7jj?svg=true)](
+
+What is this?
+----------------
+
 An Application Framework built on latest AspNetCore (run on Linux)
+
+### Framework
+
+This is an application framework built on laster __ASP.NET Core__, __ASP.NET MVC__, __OAuth 2.0 Identity Client__, __Qcloud Messaging__, & Weixin App technologies.
+
+### Architecture
+
+This implements __N-Layer architecture__ (Infrastructure, Domain, Application and Presentation Layers) and __Domain-Driven Design__ (Repositories, Entities/Value Objects, Unit of Work, Domain/Application Services, DTO's...).
+
+How to Build
+----------------
+
+Use Visual Studio 2015 with Update 3 and .NET Core 1.1 installed.
+Download from Microsoft's official website: http://asp.net
