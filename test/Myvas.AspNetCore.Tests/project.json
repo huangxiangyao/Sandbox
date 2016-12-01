@@ -1,0 +1,26 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "xunit": "2.2.0-beta4-build3444",
+    "xunit.extensibility.execution": "2.2.0-beta4-build3444",
+    "Shouldly": "2.8.2",
+    "Myvas.AspNetCore": "1.0.0-*",
+    "NSubstitute": "2.0.0-rc",
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
+    "NETStandard.Library": "1.6.1"
+  },
+
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.1.0"
+        }
+      }
+    }
+  },
+
+  "testRunner": "xunit"
+}
