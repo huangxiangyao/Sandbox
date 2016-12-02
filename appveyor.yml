@@ -1,10 +1,12 @@
 version: 0.1.{build}
+init:
+- cmd: git config --global core.autocrlf true
 before_build:
 - cmd: dotnet.exe restore
 build:
   verbosity: minimal
-test:
-  assemblies: '**\*.tests.dll'
+test: off
+deploy: off
 notifications:
 - provider: Email
   to:
