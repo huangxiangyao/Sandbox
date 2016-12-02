@@ -3,6 +3,8 @@ before_build:
 - cmd: dotnet.exe restore
 build:
   verbosity: minimal
+test:
+  assemblies: '**\*.tests.dll'
 notifications:
 - provider: Email
   to:
