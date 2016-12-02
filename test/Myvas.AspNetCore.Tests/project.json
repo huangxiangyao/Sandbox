@@ -6,13 +6,10 @@
   "dependencies": {
     "dotnet-test-xunit": "2.2.0-preview2-build1029",
     "Myvas.AspNetCore": "0.1.0-*",
-    //"System.Runtime.Serialization.Primitives": "4.3.0",
+    "System.Runtime.Serialization.Primitives": "4.3.0",
     "xunit": "2.2.0-beta4-build3444",
     //for appveyor
-    "xunit.extensibility.execution": "2.2.0-beta4-build3444",
-    "xunit.runner.console": "2.2.0-beta4-build3444",
-    "xunit.runner.visualstudio": "2.2.0-beta4-build1194",
-    "xunit.runners": "2.0.0"
+    "xunit.extensibility.execution": "2.2.0-beta4-build3444"
   },
   "testRunner": "xunit",
   "frameworks": {
