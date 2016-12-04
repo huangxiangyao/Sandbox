@@ -2,7 +2,8 @@
 Myvas.AspNetCore
 =====================
 
-AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/qysq0xxtfyacs7jj?svg=true)](https://ci.appveyor.com/project/FrankH/myvas-aspnetcore)
+[![Travis build status](https://travis-ci.org/myvas/Myvas.AspNetCore.svg?branch=master)](https://travis-ci.org/myvas/Myvas.AspNetCore)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/qysq0xxtfyacs7jj?svg=true)](https://ci.appveyor.com/project/FrankH/myvas-aspnetcore)
 
 What is this?
 ----------------
