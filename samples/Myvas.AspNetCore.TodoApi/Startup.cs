@@ -40,7 +40,7 @@ namespace Myvas.AspNetCore.TodoApi
                 .AddDbContext<ApplicationDbContext>(options =>
                 {
                     options.UseSqlite(connectionString);
-                });            
+                });
 
             // Add framework services.
             services.AddMvc();
@@ -54,24 +54,24 @@ namespace Myvas.AspNetCore.TodoApi
             // Add the detail information for the API.
             services.AddSwaggerGen(options =>
             {
-                //options.SingleApiVersion(new Swashbuckle.Swagger.Model.Info
-                //{
-                //    Version = "V1",
-                //    Title = "Todo API",
-                //    Description = "A simple example ASP.NET Core Web API",
-                //    TermsOfService = "None",
-                //    Contact = new Swashbuckle.Swagger.Model.Contact
-                //    {
-                //        Name = "FrankH",
-                //        Email = "4848285@qq.com",
-                //        Url = "http://twitter.com/frankh"
-                //    },
-                //    License = new Swashbuckle.Swagger.Model.License
-                //    {
-                //        Name = "Apache License 2.0",
-                //        Url = "https://www.apache.org/licenses/LICENSE-2.0.html"
-                //    }
-                //});
+                options.SingleApiVersion(new Swashbuckle.Swagger.Model.Info
+                {
+                    Version = "v1",
+                    Title = "Todo API",
+                    Description = "A simple example ASP.NET Core Web API",
+                    TermsOfService = "None",
+                    Contact = new Swashbuckle.Swagger.Model.Contact
+                    {
+                        Name = "FrankH",
+                        Email = "4848285@qq.com",
+                        Url = "http://twitter.com/frankh"
+                    },
+                    License = new Swashbuckle.Swagger.Model.License
+                    {
+                        Name = "Apache License 2.0",
+                        Url = "https://www.apache.org/licenses/LICENSE-2.0.html"
+                    }
+                });
 
                 // Determine base path for the application.
                 var basePath = PlatformServices.Default.Application.ApplicationBasePath;

@@ -9,7 +9,7 @@ using Myvas.AspNetCore.TodoApi.Models;
 
 namespace Myvas.AspNetCore.TodoApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     public class TodoController : Controller
     {
         private readonly ITodoRepository _todoRepository;
@@ -40,7 +40,27 @@ namespace Myvas.AspNetCore.TodoApi.Controllers
             return new ObjectResult(item);
         }
 
+        /// <summary>
+        /// Creates a TodoItem
+        /// </summary>
+        /// <remarks>
+        /// Note that the Id is a GUID and not an integer.
+        /// 
+        ///     POST /Todo
+        ///     {
+        ///         "id": "0e7ad584-7788-4ab1-95a6-ca0a5b444cbb",
+        ///         "name": "Item1",
+        ///         "isComplete": true
+        ///     }
+        ///     
+        /// </remarks>
+        /// <param name="item"></param>
+        /// <returns>New Created Todo Item</returns>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         [HttpPost]
+        [ProducesResponseType(typeof(TodoItem), 201)]
+        [ProducesResponseType(typeof(TodoItem), 400)]
         public IActionResult Create([FromBody] TodoItem item)
         {
             if (item == null)
