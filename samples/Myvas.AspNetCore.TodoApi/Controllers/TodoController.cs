@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Myvas.AspNetCore.TodoApi.Models;
+using System.ComponentModel.DataAnnotations;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -61,7 +62,7 @@ namespace Myvas.AspNetCore.TodoApi.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(TodoItem), 201)]
         [ProducesResponseType(typeof(TodoItem), 400)]
-        public IActionResult Create([FromBody] TodoItem item)
+        public IActionResult Create([FromBody, Required] TodoItem item)
         {
             if (item == null)
             {
